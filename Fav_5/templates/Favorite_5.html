@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Here are my top 5 favorite athletes of all time:</h1>
+    <!-- coming from routes.py file: -->
+    <!-- curly brackets with percent in the middle: tells html to communicate with python and in this case do a for-loop -->
+    {% for name in list_names %}
+        <h3>{{ name }}</h3>
+    {% endfor %}
+
+{% endblock content %}
